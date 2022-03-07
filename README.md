@@ -1,10 +1,10 @@
-# bandgap_reference
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+# Bandgap Reference
+![App Screenshot](/public/images/VSD_IAT.jpeg)
 # Bandgap Voltage Reference using sky130nm PDK
 
-Introduction to BGR
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Bandgap reference circuit
 
+![App Screenshot](/public/images/Bandgap_ref.jpeg)
 It is a temperature dependent voltage reference circuit.
 
 It produce constant voltage regardless of  variation in power supply,temperature ,and loadin circuit.
@@ -37,7 +37,7 @@ Basic Principal of BGR
 
 It is the combination of CTAT to PTAT voltage generator 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/images/Bandgap_ref_Intro.jpeg)
 
 Types of BGR
 
@@ -61,10 +61,11 @@ Construction OF BGR:
 Components
 1. CTAT voltage generation circuit :(complementry to absolute temperature)
 
+![App Screenshot](/public/images/CTAT.jpeg)
 
 The CTAT Voltage generation circuit consist of a BJT connected as a diode
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/images/CTAT_diff_topo.jpeg)
 
 a. if no. of PNP transistor =1
 
@@ -74,7 +75,7 @@ c. if variable current source is applied
 
 
 2. PTAT Voltage generation circuit 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 The PTAT Voltgae generation circuit consist of N BJTs connected with a series resistance.
 
 3. Startup circuit (NA)
@@ -86,7 +87,7 @@ The PTAT Voltgae generation circuit consist of N BJTs connected with a series re
 
 the design and simulation of the BGR circuit is performed using following Tools
 Spice netlist simulation - Ngspice
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 ## Design and Pre-layout Simulation
 
 Design Requirements
@@ -144,25 +145,34 @@ Here we are showing simulation of CTAT and BGR
 CTAT Simulation
 
 1. CTAT Voltage generation with single BJT
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/images/ctat_bjt_sp.jpeg)
+![App Screenshot](/public/images/ctat_graph.png)
 
 2. CTAT Voltage generation with multiple BJT
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/images/ctat_mult_bjt_sp.jpeg)
+![App Screenshot](/public/images/ctat_multi_bjt_graph.png)
 
 3. CTAT Voltage generation with different current source values
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/images/ctat_i_var_sp.jpeg)
+![App Screenshot](/public/images/ctat_i_var.png)
+
+![App Screenshot](/public/images/ctat_I_VARI_GRAPH.jpeg)
 
 
 BGR Simulation
 
 CTAT voltage +PTAT voltage = Vref
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+![App Screenshot](/public/images/BGR_CKT_IDEAL_VCVS.jpeg)
+![App Screenshot](/public/images/BGR_ideal_sp2.jpeg)
+![App Screenshot](/public/images/Bgrdiff_equ.jpeg)
+![App Screenshot](/public/images/bgr_VREF_VQ3.jpeg)
 
 ## Conclusion
 We can find that the Vref = Vctat+Vptat
