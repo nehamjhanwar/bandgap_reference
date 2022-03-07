@@ -176,8 +176,6 @@ CTAT voltage +PTAT voltage = Vref
 
 ## Conclusion
 We can find that the Vref = Vctat+Vptat
-## Authors
 
--Designed by Neha Maheshwari in collaboration with VSD
 
 
